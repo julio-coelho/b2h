@@ -1,6 +1,6 @@
 {
   "name": "b64-hex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base 64 to hex tool",
   "main": "index.js",
   "scripts": {
