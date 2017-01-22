@@ -1,10 +1,13 @@
 {
   "name": "b64-hex",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Base 64 to hex tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "b2h": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/julio-coelho/b64-hex/issues"
   },
-  "homepage": "https://github.com/julio-coelho/b64-hex#readme"
+  "homepage": "https://github.com/julio-coelho/b64-hex#readme",
+  "dependencies": {
+    "atob": "^2.0.3",
+    "commander": "^2.9.0"
+  }
 }
