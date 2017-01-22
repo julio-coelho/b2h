@@ -1,8 +1,13 @@
 {
-  "name": "b64-hex",
-  "version": "1.0.0",
-  "description": "Base 64 to hex tool",
+  "name": "b2h",
+  "version": "0.0.1",
+  "description": "A Base64 to hexadecimal - Command Line Interface - tool",
   "main": "index.js",
+  "dependencies": {
+    "atob": "^2.0.3",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julio-coelho/b64-hex.git"
+    "url": "git+https://github.com/julio-coelho/b2h.git"
   },
-  "author": "Julio Coelho",
-  "license": "ISC",
+  "keywords": [
+    "base64",
+    "hexadecimal"
+  ],
+  "author": "Julio <juliocoelho@icloud.com> (http://juliocoelho.me)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julio-coelho/b64-hex/issues"
+    "url": "https://github.com/julio-coelho/b2h/issues"
   },
-  "homepage": "https://github.com/julio-coelho/b64-hex#readme",
-  "dependencies": {
-    "atob": "^2.0.3",
-    "commander": "^2.9.0"
-  }
+  "homepage": "https://github.com/julio-coelho/b2h#readme"
 }
