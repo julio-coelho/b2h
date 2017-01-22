@@ -9,19 +9,19 @@ Well, I needed a good entry to JtR, and I had only base64 lists.
 
 ## Installation
 
-    `git clone`
-    `npm install`
-    `npm link`
+    git clone
+    npm install
+    npm link
 
 Nothing else...
 
 ## Tests
 
-    `$ b2h -f ~/Downloads/hashes.txt -o ~/Desktop/output.txt`
+    $ b2h -f ~/Downloads/hashes.txt -o ~/Desktop/output.txt
 
         or 
 
-    `$ b2h -b SXadG1Zq0U2O39tX13f9P2/m45o=`
+    $ b2h -b SXadG1Zq0U2O39tX13f9P2/m45o=
 
 
 ## License
