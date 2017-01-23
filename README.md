@@ -17,11 +17,11 @@ Nothing else...
 
 ## Tests
 
-    $ b2h -f ~/Downloads/hashes.txt -o ~/Desktop/output.txt
+    $ b2h SXadG1Zq0U2O39tX13f9P2/m45o=
 
         or 
 
-    $ b2h -b SXadG1Zq0U2O39tX13f9P2/m45o=
+    $ b2h -f ~/Downloads/hashes.txt
 
 
 ## License
