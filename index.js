@@ -7,25 +7,20 @@ const readline = require('readline');
 const fs = require('fs');
 
 program
-    .version('1.0.0')
-    .option('-b, --base64 <base64>', 'Base64 hash to be translated.')
+    .version('0.0.2')
+    .arguments('<base64>')
     .option('-f, --file <file>', 'File with base64 hashes to be translated.')
-    .option('-o, --output <output>', 'Output file with hexadecimal result.')
+    .action(function (base64) {
+        _base64 = base64;
+    })
     .parse(process.argv);
 
-if (program.base64) {
-    console.log(b2h(program.base64));
+if (typeof _base64 !== 'undefined') {
+    console.log(b2h(_base64));
 } else if (program.file) {
-
-    if (!program.output) {
-        console.error('Ops .... I have an input but not an output.')
-        process.exit(-2);
-        return;
-    }
-
     const rl = readline.createInterface({
         input: fs.createReadStream(program.file),
-        output: fs.createWriteStream(program.output),
+        output: process.stdout,
         terminal: false
     });
 
